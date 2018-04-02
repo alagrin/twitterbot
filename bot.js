@@ -2,7 +2,7 @@ const Twit = require('twit');
 const config = require('./config');
 
 //start new session...
-const T = new Twit(config);
+let T = new Twit(config);
 
 //get tweets by searching text, count, etc.
 T.get('search/tweets', {q: 'insert search here'}, function(err, data, response) {
